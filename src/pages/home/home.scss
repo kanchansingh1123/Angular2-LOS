@@ -1,0 +1,26 @@
+page-home {
+	.main-div {
+		display: flex;
+	}
+	.right-div {
+		width: 100%;
+		text-align: right;
+		cursor: pointer;
+	}
+	.left-div {
+		
+	}
+	.header-icons {
+		font-size: 1.5em;
+	}	
+	.logout-margin {
+		margin-right: 5px;
+	}
+	.logo-image {
+		background-image: url(../assets/images/logo.png);
+	    /* height: 100%; */
+	    width: 100%;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+}

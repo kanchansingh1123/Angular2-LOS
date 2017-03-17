@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    	<div class="main-div">
+    		<div class="left-div">
+    			<img style="height:50%; width: 50%;" src="../assets/images/logo.png">
+    		</div>
+    		<div class="right-div">
+    			<ion-icon class="header-icons logout-margin" ios="ios-person" md="md-person"></ion-icon>
+    			<ion-icon class="header-icons" ios="ios-power" md="md-power"></ion-icon>
+    		</div>
+    	</div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<page-task-list [task]="task" *ngFor="let task of tasks"></page-task-list>
+</ion-content>
