@@ -1,12 +1,13 @@
-<ion-item-divider>
-   <ion-row>
-     <ion-col col-4>{{task.taskName}}</ion-col>
-     <ion-col col-8>
-       <ion-list>
-         <button ion-item *ngFor="let application of task.applications">
-           {{ application.applicationName }}
-         </button>
-       </ion-list>
-     </ion-col>
-   </ion-row>
- </ion-item-divider>
+<ion-grid>
+  <ion-item-divider>
+    <ion-row class="vertical-divider">
+        <ion-col col-4 class="task-bottom-border" ion-item >{{task.taskName}}</ion-col>
+        <ion-col col-8 class='apply'>
+          <button ion-item *ngFor="let application of task.applications">              
+              {{ application.applicationName }}
+          </button>
+
+        </ion-col>
+    </ion-row>
+  </ion-item-divider>
+</ion-grid>

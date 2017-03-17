@@ -1,0 +1,32 @@
+{  
+  "taskList":[  
+     {  
+        "taskName":"Task - 1",
+        "applications":[  
+           {  
+              "applicationName":"Application -1"
+           },
+           {  
+              "applicationName":"Application -2"
+           },
+           {  
+              "applicationName":"Application -3"
+           }
+        ]
+     },
+     {  
+        "taskName":"Task - 2",
+        "applications":[  
+           {  
+              "applicationName":"Application -1"
+           },
+           {  
+              "applicationName":"Application -2"
+           },
+           {  
+              "applicationName":"Application -3"
+           }
+        ]
+     }
+  ]
+}
