@@ -1,7 +1,11 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+
+import { AppRoutingModule } from './app.routing';
+
 import { HomePage } from '../pages/home/home';
+
+import { MyApp } from './app.component';
 
 import { TaskListService } from '../providers/services/tasklist.service';
 
@@ -23,7 +27,8 @@ import { TaskDetailsPage } from '../pages/taskdetails/taskdetails';
     DashboardPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AppRoutingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
