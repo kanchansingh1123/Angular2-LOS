@@ -15,5 +15,6 @@ export class TaskListPage {
 	 }
 	 openApplication() {
 	 	this.router.navigate(['application']);
+	 	//this.router.navigateByUrl('application');
 	 }
 }
