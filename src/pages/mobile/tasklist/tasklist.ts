@@ -1,20 +1,22 @@
 import { Component, Input } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
-import { Router } from '@angular/router';
+import { NavController, NavParams } from 'ionic-angular';
+
+import { TaskDetailsPage } from '../taskdetails/taskdetails';
 
 @Component({
  selector: 'page-task-list',
  templateUrl: 'tasklist.html'
 })
 
-export class TaskListPage { 
-	 @Input() task : any;
-	 constructor(public navCtrl: NavController, public router: Router) {
-
+export class TaskListPage {
+	 public task : any;
+	 
+	 constructor(public navCtrl: NavController, public navParams: NavParams) {
+	 	this.task = this.navParams.get('task');
 	 }
+
 	 openApplication() {
-	 	this.router.navigate(['application']);
-	 	//this.router.navigateByUrl('application');
+	 	this.navCtrl.push(TaskDetailsPage);
 	 }
 }

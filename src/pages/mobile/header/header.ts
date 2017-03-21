@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
@@ -7,7 +7,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'header.html'
 })
 export class HeaderPage {
-  public tasks : any ;
+
+  @Input() title: string;
+
   constructor(public navCtrl: NavController) {
 	 
   }

@@ -1,8 +1,12 @@
 <ion-header>
-  <ion-navbar>
-    	<page-header></page-header>
-  </ion-navbar>
+	<page-header title="Dashboard"></page-header>
 </ion-header>
+
 <ion-content>
-	<router-outlet></router-outlet>	
+	<button (click)="goToOtherPage()">
+      Go To Task List Page
+    </button>
+    <button [navPush]="pushPage" [navParams]="{task: tasks}">
+      Go To Task List Page
+    </button>
 </ion-content>

@@ -1,11 +1,16 @@
-<ion-grid class="apply-border">
-    <ion-row class="vertical-divider">
-        <ion-col col-4 class="task-bottom-border" ion-item >{{task.taskName}}</ion-col>
-        <ion-col col-8 class='apply'>
-          <button (click)="openApplication()" ion-item *ngFor="let application of task.applications">
-              {{ application.applicationName }}
-          </button>
-        </ion-col>
-    </ion-row>
-</ion-grid>
+<ion-header>
+	<page-header title="Task List"></page-header>
+</ion-header>
+<ion-content>
+	<ion-grid class="apply-border" *ngFor="let task of task">
+	    <ion-row class="vertical-divider">
+	        <ion-col col-4 class="task-bottom-border" ion-item >{{task.taskName}}</ion-col>
+	        <ion-col col-8 class='apply'>
+	          <button (click)="openApplication()" ion-item *ngFor="let application of task.applications">
+	              {{ application.applicationName }}
+	          </button>
+	        </ion-col>
+	    </ion-row>
+	</ion-grid>
+</ion-content>
 
