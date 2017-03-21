@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { TaskListService } from '../../providers/services/tasklist.service';
+import { TaskListService } from '../../../providers/services/tasklist.service';
 
 @Component({
   selector: 'page-center',

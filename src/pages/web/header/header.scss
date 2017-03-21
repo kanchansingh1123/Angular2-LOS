@@ -1,0 +1,28 @@
+page-header {
+	.main-div {
+		display: flex;
+	}
+	.right-div {
+		width: 100%;
+		text-align: right;
+		padding: 10px;
+	}
+	.left-div {
+		
+	}
+	.header-icons {
+		font-size: 1.5em;
+	}	
+	.logout-margin {
+		margin-right: 10px;
+	}
+	.logo-image {
+	    max-height: 70%;
+	    max-width: 70%;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+	.cursor-pointer {
+		cursor: pointer;
+	}
+}

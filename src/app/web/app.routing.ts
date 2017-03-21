@@ -5,8 +5,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TaskDetailsPage } from '../pages/taskdetails/taskdetails';
-import { CenterPage } from '../pages/center/center';
+import { TaskDetailsPage } from '../../pages/taskdetails/taskdetails';
+import { CenterPage } from '../../pages/center/center';
 
 const appRoutes: Routes = [
 	{

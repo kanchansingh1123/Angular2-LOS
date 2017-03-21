@@ -1,0 +1,19 @@
+page-task-list {
+	.vertical-divider .apply:not(:first-child):after{
+		background: #DDDDDD;
+		bottom: 0;
+		content: " ";
+		position: absolute;
+		top: 0;
+		width: 1px;
+		height:auto;
+	}
+
+	.task-bottom-border .item-inner {
+		border-bottom : 0px !important;
+	}
+
+	.apply-border {
+		border-bottom : 1px solid  #DDDDDD;
+	}
+}
